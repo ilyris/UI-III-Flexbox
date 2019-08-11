@@ -66,7 +66,10 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 body {
     margin: 0 auto;
-    width: 1100px;
+    width: 980px;
+}
+h3 {
+	font-size: 24px;
 }
 #mainHeader {
     padding: 25px;
@@ -149,10 +152,11 @@ section#cardTwo {
 .cardTwoContentWrapper {
 	position: relative;
 	display: flex;
+	justify-content: space-between;
 }
 .double-column {
-    width: 49%;
-	padding: 20px 20px 40px 0;
+    width: 47%;
+	padding: 20px 0 40px 0;
 }
 .double-column p {
     line-height: 18px;
@@ -179,9 +183,133 @@ footer {
 }
 .copyright {
 	text-align: center;
-	font-size: 14px;
+	font-size: 16px;
 	margin-bottom: 100px;
+	width: 100%;
+	margin-top: 40px;
+	font-weight: 500;
+
 }
 .cardOneContentWrapper.imageCardOneWrapper {
 	text-align: right;
+}
+/* Services Page */
+.fullWidthColumn {
+	padding: 25px 0;
+	border-bottom: 1px solid #000;
+}
+.fullWidthColumn p {
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 400px;
+}
+#doubleServiceWrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+
+}
+.doubleServiceContentWrapper {
+	box-sizing: boder-box;
+	border: 1px solid #000;
+	background-color: #d6d6d6;
+	width: 47%;
+	padding: 20px;
+	margin: 25px 0;
+}
+.doubleServiceHeading {
+	text-transform: uppercase;
+	font-size: 20px;
+
+}
+.doubleServiceParagraphContent {
+	line-height: 26px;
+	padding-bottom: 20px;
+}
+.doubleServiceContentWrapper a {
+	padding: 10px 20px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	text-decoration: none;
+	background: #fff;
+	color: #000;
+	margin-bottom: 20px;
+	transition: all ease-in-out 120ms;
+}
+.doubleServiceContentWrapper a:hover {
+	background-color: #000;
+	color: #fff;
+}
+.LeanrMoreContainer {
+	display: flex;
+	align-content: center;
+	justify-content: flex-start;
+}
+/* Footer */
+footer {
+	display: flex;
+	flex-flow: row wrap;
+}
+.fullWidthColumn.footerContentContainer {
+	width: 50%;
+	padding-top: 0;
+	border-bottom: none;
+}
+.fullWidthColumn.footerContentContainer div {
+	margin-top: 20px;
+    padding-left: 20px;
+}
+.fullWidthColumn.footerContentContainer ol {
+	list-style: square;
+
+}
+.fullWidthColumn.footerContentContainer ol li {
+	padding: 7px 0;
+}
+
+@media (max-width: 740px) {
+	body {
+		width: 100%;
+	}
+	#mainNavigation {
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+	.navigationUl {
+		order: 1;
+	}
+	.image-container {
+		order: 0;
+		padding-bottom: 15px;
+	}
+	.doubleServiceContentWrapper	 {
+		width: 100%;
+	}
+	#doubleServiceWrapper {
+		padding: 0 20px;
+	}
+	.middle-img {
+		padding: 0 20px;
+	}
+	.fullWidthColumn {
+		padding: 20px;
+	}
+	.fullWidthColumn p {
+		text-align: justify;
+	}
+	.fullWidthColumn.footerContentContainer {
+		width: 100%;
+	}
+	.footerImageContainer {
+		width: 100%;
+		max-height: 300px;
+		overflow: hidden;
+		padding: 20px;
+	}
+	.services-info-img {
+		width: 100%;
+		max-height: 100%;
+		position: relative;
+		bottom: 50px;
+	}
 }
