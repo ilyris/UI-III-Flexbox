@@ -64,3 +64,124 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+    margin: 0 auto;
+    width: 1100px;
+}
+#mainHeader {
+    padding: 25px;
+    background-color: #ffffff;
+    position: sticky;
+    box-shadow: 0px 2px 5px 0px #9a9595;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 20px;
+}
+#mainNavigation {
+	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigationUl {
+	text-align: left;
+	display: flex;
+}
+li.navigationListItems {
+    padding: 0 20px;
+}
+li.navigationListItems a {
+    text-decoration: none;
+    font-size: 18px;
+    color: gray;
+    transition: all ease-in-out 120ms;
+}
+li.navigationListItems a:hover {
+	color: #000;
+}
+.image-container {
+
+}
+/* Section One */
+#cardOne {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardOneContentWrapper {
+    width: 49%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+.cardOneContentWrapper.welcomeText {
+	display: flex;
+    flex-direction: column;
+}
+.cardOneContentWrapper h1 {
+    font-size: 80px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.cardOneContentWrapper h1 span {
+    width: 100%;
+    display: block;
+}
+.cardOneContentWrapper a {
+    width: 200px;
+    padding: 10px 40px;
+    border: 1px solid #000;
+    color: gray;
+    text-decoration: none;
+    margin-top: 10px;
+    margin: 10px auto 0 auto;
+}
+
+/* Section Two */
+section#cardTwo {
+    border-top: 1px solid #000;
+    padding-top: 30px;
+    position: relative;
+    height: fit-content;
+}
+.cardTwoContentWrapper {
+	position: relative;
+	display: flex;
+}
+.double-column {
+    width: 49%;
+	padding: 20px 20px 40px 0;
+}
+.double-column p {
+    line-height: 18px;
+}
+.middle-img {
+	width: 100%;
+}
+.tripple-column {
+    width: 33%;
+    padding: 40px 10px 40px 0;
+}
+/* Footer */
+footer {
+	width: 100%;
+	padding-top: 40px;
+	border-top: 1px solid #000;
+}
+.address-information .three,
+.address-information .four{
+	padding-top: 20px;
+}
+.address-information .four {
+	padding-bottom: 50px;
+}
+.copyright {
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 100px;
+}
+.cardOneContentWrapper.imageCardOneWrapper {
+	text-align: right;
+}
